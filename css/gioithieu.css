@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  .grid {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 200px 80px;
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+  }
+  .grid img {
+    max-width: 100%;
+    display: block;
+    background-size: 100%;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  .other-intro p {
+    text-align: center;
+  }
+  p {
+    line-height: 1.5;
+  }
+  .other-intro h2 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .touch {
+    padding: 15px 0 15px 0;
+  }
+  .intro p {
+    padding: 10px 0;
+  }
+  .more-intro {
+    margin: 30px 0;
+    padding: 10px 0;
+    line-height: 2;
+    background-color: rgb(230, 217, 199);
+    font-size: 14px;
+  }
+  .more-intro h2 {
+    font-size: 20px;
+    margin: 0px 10px;
+    padding: 0px 5px;
+    border-bottom: 1px solid #c3bfbf;
+  }
+  .more-intro ul {
+    padding-top: 5px;
+  }
+  .more-intro li {
+    margin: 5px 10px;
+    padding: 0px 5px;
+  }
+  .manager {
+    margin: auto;
+    padding: auto;
+  }
+  .manager h2 {
+    padding: 10px 10px;
+    padding-bottom: 40px;
+  }
+  .manager p {
+    text-align: center;
+    cursor: pointer;
+  }
+  .manager img {
+    max-width: 100%;
+    display: block;
+    background-size: 100%;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .manager ul {
+    margin: 5px 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+  }
+  

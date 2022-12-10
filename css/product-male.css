@@ -1,0 +1,97 @@
+.title{
+  padding: 120px 0 5px 60px;
+  color: #212529;
+  display: flex;
+}
+.title a{
+  color: #212529;
+  padding: 6px;
+  text-decoration: none;
+}
+.fa-chevron-right{
+  font-size: 15px;
+  margin-top: 7px;
+  color: black;
+}
+.title .tl-dc{
+  color: red;
+}
+.search-product{
+  padding-left: 60px;
+  padding-top: 20px;
+  display: flex;
+  height: 90px;
+  background-color: #F1F1F1;
+  font-size: 16px;
+  line-height: 0.5px; 
+}
+.search-product-content{
+  padding-right:30px;
+  color: #333333;
+}
+.search-product-content select{
+  width: 320px;
+  padding: 8px 0px 8px 0;
+}
+.search-product-content .button{
+  padding: 20px 20px;
+  background-color: red;
+  margin-left: 40px;
+  width: 250px;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 18px !important;
+  cursor: pointer;
+  border: red solid 4px;
+}
+.search-product-content .button i{
+  padding-left: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.search-product-content .button:hover{
+  background-color: #000;
+  color: red;
+}
+
+/*------------------------------product-male----------------------------------*/
+
+.sell{
+  display: flex;
+  padding:20px 60px 0px 60px;
+  margin-bottom: 100px;
+  margin: auto;
+}
+#wrapper-male{
+  flex: 4;
+}
+.news{
+  margin-top: 20px;
+  padding-left: 10px;
+  margin-left: 20px;
+  flex: 1;
+  width: 270px;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  top:0;
+  position: sticky;
+}
+.news-tt{
+  padding-top: 20px;
+  width: 220px;
+  font-size: 14px;
+}
+.news-tt img{
+  width: 70px;
+  height: 70px;
+}
+.feature{
+  width: 300px;
+  padding-right:5px;
+  padding-bottom: 10px;
+  float: left;
+}
