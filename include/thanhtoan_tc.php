@@ -29,7 +29,7 @@ include('../include/header.php');
         <h1>Tình trạng thanh toán</h1>
     </div>
     <div class="noti-content">
-        <p>Bạn đã thanh toán thành công</p>
+        <p>Bạn đã mua hàng thành công</p>
         <a href="../html/index.php" class="btn"><span>Trở về trang chủ</span></a>
     </div>
 </div>

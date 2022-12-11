@@ -5,6 +5,18 @@ include('../include/header.php');
 <?php
 $sql_lay_giohang = mysqli_query($conn, 'SELECT*FROM tbl_giohang ORDER BY giohang_id DESC');
 ?>
+<?php
+// if (isset($_POST['thanhtoan'])) {
+//     $tenkhachhang = $_POST['tenkhachhang'];
+//     $dienthoai = $_POST['dienthoai'];
+//     $tinh = $_POST['tinh'];
+//     $huyen = $_POST['huyen'];
+//     $diachi = $_POST['diachi'];
+//     $hinhthucthanhtoan = $_POST['hinhthucthanhtoan'];
+//     $sql_khachhang = "INSERT INTO tbl_khachhang(tenkhachhang,dienthoai,tinh,huyen,diachi,hinhthucthanhtoan) 
+// 	values ('$tenkhachhang','$dienthoai','$tinh','$huyen','$diachi','$hinhthucthanhtoan')";
+// }
+?>
 <html lang="en">
 
 <head>
@@ -21,15 +33,15 @@ $sql_lay_giohang = mysqli_query($conn, 'SELECT*FROM tbl_giohang ORDER BY giohang
         <div class="container">
             <div class="pt-tt">
                 <div>
-                    <input name="method-payment" type="radio">
+                    <input name="hinhthucthanhtoan" type="radio" value="1">
                     <label for="">Thanh toán bằng momo</label>
                 </div>
                 <div>
-                    <input name="method-payment" type="radio">
+                    <input name="hinhthucthanhtoan" type="radio" value="2">
                     <label for="">Thanh toán bằng tài khoản ngân hàng</label>
                 </div>
                 <div>
-                    <input name="method-payment" type="radio" checked>
+                    <input name="hinhthucthanhtoan" type="radio" checked value="3">
                     <label for="">Thanh toán khi nhận hàng</label>
                 </div>
             </div>
@@ -39,24 +51,24 @@ $sql_lay_giohang = mysqli_query($conn, 'SELECT*FROM tbl_giohang ORDER BY giohang
                     <div class="delivery-content-left-input-top row">
                         <div class="delivery-content-left-input-top-item">
                             <label for="">Họ tên<span style="color:red">*</span></label>
-                            <input type="text" required>
+                            <input type="text" name="tenkhachhang" required>
                         </div>
                         <div class="delivery-content-left-input-top-item">
                             <label for="">Điện thoại<span style="color:red">*</span></label>
-                            <input type="text" required>
+                            <input type="text" name="dienthoai" required>
                         </div>
                         <div class="delivery-content-left-input-top-item">
                             <label for="">Tỉnh/tp<span style="color:red">*</span></label>
-                            <input type="text" required>
+                            <input type="text" name="tinh" required>
                         </div>
                         <div class="delivery-content-left-input-top-item">
                             <label for="">Quận/huyện<span style="color:red">*</span></label>
-                            <input type="text" required>
+                            <input type="text" name="huyen" required>
                         </div>
                     </div>
                     <div class="delivery-content-left-input-bottom">
                         <label for="">Địa chỉ<span style="color:red">*</span></label>
-                        <input type="text" required>
+                        <input type="text" name="diachi" required>
                     </div>
                     <div class="delivery-content-left-button row">
                         <a href="../include/thanhtoan_tc.php"><button type="submit" name="thanhtoan">
