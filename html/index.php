@@ -32,7 +32,7 @@ include('../inc/myconnect.php');
 		include('../include/giohang.php');
 	}
 	elseif($tam=='nhanthongbao'){
-		include('../include/dangnhap.php');
+		include('../include/dangky.php');
 	}
 	elseif($tam=='xacnhan'){
 		include('../include/xacnhan.php');
